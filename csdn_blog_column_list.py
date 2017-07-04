@@ -1,10 +1,10 @@
 #_*_coding:utf8_*_
 #
-# 文件名：blog_column_list.py
+# 文件名：csdn_blog_column_list.py
 # 功能：爬取csdn博客专栏标题和链接,
 #       输出到当前文件夹的List.xls中
 # 使用方式：
-#       python blog_column_list.py [目标链接] [页数]
+#       python blog_column_list.py <目标链接> <页数>
 # 环境：python2.7.13
 # 作者：vimiix
 #####################工作用#####################
@@ -72,5 +72,5 @@ if __name__ == '__main__':
         savePath = 'List.xls'
         blog_artical.saveArticalInfo(savePath)
     else:
-        print ("Please input des link.~-~")
+        print ("Please input des link.~-~\nUsage:{} <colum_link> <paginal number>").format(sys.argv[0])
 
