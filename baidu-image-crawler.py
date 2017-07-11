@@ -18,24 +18,27 @@ usr_agent = {
         }
 
 def image_crawler(kw):
-    url = BAIDU_IMAGE + kw
-    #print url
+    url = BAIDU_IMAGE + kw.replace(' ','+')
+    print url
     req = Request(url, headers=usr_agent)
     html = urlopen(req).read()
     #print html
     images = re.findall('"objURL":"(.*?)"', html, re.S)
+    print('Find {0} images.'.format(len(images)))
 
-    counter = 0
+    counter = 1
     for img in images:
         try:
             rs = requests.get(img)
             if not os.path.exists('./images'):
                 os.makedirs('./images')
+            print('Downloading img{0}: '.format(counter)+img)
             with open('./images/img'+str(counter)+'.jpg', 'wb') as f:
                 f.write(rs.content)
                 counter += 1
         except:
             print("img{0}'s url error".format(counter))
+            counter += 1
             continue
 
     return False
