@@ -16,7 +16,7 @@ import smtplib
 #发件邮箱配置
 sender = "nigelyq@163.com"  #"发件邮箱地址"
 usrname= "nigelyq"          #"发件人"
-passwd = "nigelyao"         #"发件邮箱密码"
+passwd = "xxxxx"            #"发件邮箱密码"
 host   = "smtp.163.com"     #"发件邮箱的smtp服务器"
 port   = 25
 
