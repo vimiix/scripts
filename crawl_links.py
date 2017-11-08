@@ -1,5 +1,7 @@
 #coding=utf-8
-"""爬取某条链接的网页内容"""
+"""爬取某条链接的网页内容
+   run on python3.x
+"""
 
 import urllib.request
 import ssl
