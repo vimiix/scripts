@@ -1,5 +1,7 @@
 # PyScriptTools
 
+[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/vimiix)
+
 这里收录我业余时间写的一些python脚本，方便以后查阅使用。
 
 本人~~本职工作不是程序员~~（现在是了^.^），目前写Python代码完全是出于兴趣爱好。收集自己写过的这些代码，一方面，自己方便整理和保存，另一方面，也希望可以启发到别人。
@@ -13,4 +15,4 @@
 
 <hr>
 
-了解我更多，请访问：[www.vimiix.com](http://www.vimiix.com)
+了解更多，请访问我的博客：[www.vimiix.com](http://www.vimiix.com)
