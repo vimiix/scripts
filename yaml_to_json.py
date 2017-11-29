@@ -17,7 +17,9 @@ import argparse
 def yaml_to_json(path):
     with open(path) as f:
         txt=yaml.load(f)
-    return json.dumps(txt)
+        return json.dumps(txt)
+    except yaml.YAMLError as e:
+        print(e)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(prefix_chars='-+/')
@@ -26,5 +28,6 @@ if __name__ == '__main__':
 
     json_txt = yaml_to_json(args.file)
     print "Output:", json_txt
+
     # ...Something to handling with the json data
 
