@@ -38,6 +38,7 @@ class ToHtml():
         self.html = html(
             head(
                 title(self.title),
+                meta(http_equiv="content-type", content="text/html; charset=utf-8"),
                 style(str_style)
             ),
             body(class_='rpt')(
